@@ -1,5 +1,13 @@
-.font-segoe {
+body .font-segoe {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.margin-20 {
+    margin: 20px;
+}
+
+.bg-color-f4 {
+    background-color: #f4f4f4;
 }
 
 .container {
@@ -7,6 +15,7 @@
     margin: auto;
     background-color: #fff;
     padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     position: relative;
 }
@@ -26,6 +35,10 @@
 .form-max {
     max-width: 400px;
     margin: auto;
+}
+
+.margin-bottom-8 {
+    margin-bottom: 8px;
 }
 
 .input-select-width {
@@ -72,12 +85,24 @@
     margin-top: 20px;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .color-red {
     color: red;
 }
 
+.margin-bottom-16 {
+    margin-bottom: 16px;
+}
+
 .display-none {
     display: none;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
 }
 
 .position-relative {
@@ -88,13 +113,25 @@
     position: absolute;
 }
 
-.margin-top-10 {
-    margin-top: 10px;
+.top-20 {
+    top: 20px;
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
+.right-20 {
+    right: 20px;
+}
+
+.padding-10-15 {
+    padding: 10px 15px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.margin-left-10 {
+    margin-left: 10px;
 }
 
 .footer-text {
@@ -102,4 +139,9 @@
     margin-top: 20px;
     padding: 10px;
     background-color: #f4f4f4;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
 }
