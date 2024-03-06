@@ -6,33 +6,36 @@
         <title>Login</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body class="body">
         <div class="container">
-            <h1>FR Printing Service</h1>
-            <img src="images/logo.png" width="100" height="100">
+            <h1 class="h1">FR Printing Service</h1>
+            <img src="images/logo.png" class="logo">
 
-            <form action="login.php" method="post">
+            <form action="login.php" method="post" class="form">
                 <button type="submit" class="admin-login">Admin Login</button>
             </form>
             <form id="uploadForm" action="#" method="post"
-                enctype="multipart/form-data">
-                <label for="name">Nama:</label>
-                <input type="text" id="name" name="name" required><br>
+                enctype="multipart/form-data" class="form">
+                <label for="name" class="label">Nama:</label>
+                <input type="text" id="name" name="name" class="input"
+                    required><br>
 
-                <label for="room">No. Bilik:</label>
-                <input type="text" id="room" name="room" required><br>
+                <label for="room" class="label">No. Bilik:</label>
+                <input type="text" id="room" name="room" class="input"
+                    required><br>
 
-                <label for="files">Sila Hantar File:</label>
+                <label for="files" class="label">Sila Hantar File:</label>
                 <div id="fileInputs">
                     <div class="file-input-container">
                         <input type="file" name="files[]" class="file-input"
                             accept=".pdf,.doc,.docx" required>
                     </div>
                 </div>
-                <button type="button" class="add-file">Tambah Fail</button>
+                <button type="button" class="add-file">Tambah
+                    Fail</button>
 
-                <label for="payment">Pembayaran:</label>
-                <select id="payment" name="payment" required>
+                <label for="payment" class="label">Pembayaran:</label>
+                <select id="payment" name="payment" class="select" required>
                     <option disabled selected hidden>Pilih Jenis
                         Pembayaran</option>
                     <option value="cash">Cash</option>
@@ -40,15 +43,15 @@
                     <option value="bank">Bank</option>
                 </select><br>
 
-                <button type="submit">Submit</button>
+                <button type="submit" class="button">Submit</button>
             </form>
 
-            <div id="progress-container">
-                <div id="progress-bar"></div>
-                <div id="progress-text"></div>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+                <div class="progress-text"></div>
             </div>
         </div>
-        <footer>
+        <footer class="footer">
             <p>© Copyright 2024 FRPrinting SDN.BHD. All Rights Reserved.</p>
         </footer>
     </body>
