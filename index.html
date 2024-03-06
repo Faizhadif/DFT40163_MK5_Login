@@ -8,31 +8,37 @@
     </head>
     <body>
         <div class="container">
-            <h1>FR Printing Service</h1>
-            <img src="images/logo.png" width="100" height="100">
-
+            <h1 class="font-segoe color-333">FR Printing Service</h1>
+            <img src="images/logo.png" class="logo"
+                alt="FR Printing Service Logo">
             <form action="login.php" method="post">
-                <button type="submit" class="admin-login">Admin Login</button>
+                <button type="submit"
+                    class="admin-login bg-color-4CAF50 color-white padding-12-20 border-none border-radius-5 cursor-pointer font-size-16 display-block margin-auto margin-top-20">Admin
+                    Login</button>
             </form>
             <form id="uploadForm" action="#" method="post"
-                enctype="multipart/form-data">
-                <label for="name">Nama:</label>
-                <input type="text" id="name" name="name" required><br>
+                enctype="multipart/form-data" class="form-max">
+                <label for="name" class="color-555">Nama:</label>
+                <input type="text" id="name" name="name" required
+                    class="input-select-width input-padding-10 input-border border-radius-5"><br>
 
-                <label for="room">No. Bilik:</label>
-                <input type="text" id="room" name="room" required><br>
+                <label for="room" class="color-555">No. Bilik:</label>
+                <input type="text" id="room" name="room" required
+                    class="input-select-width input-padding-10 input-border border-radius-5"><br>
 
-                <label for="files">Sila Hantar File:</label>
-                <div id="fileInputs">
-                    <div class="file-input-container">
-                        <input type="file" name="files[]" class="file-input"
-                            accept=".pdf,.doc,.docx" required>
-                    </div>
+                <label for="files" class="color-555">Sila Hantar File:</label>
+                <div id="fileInputs" class="file-input-container">
+                    <input type="file" name="files[]"
+                        class="file-input input-select-width input-padding-10 input-border border-radius-5"
+                        accept=".pdf,.doc,.docx" required>
                 </div>
-                <button type="button" class="add-file">Tambah Fail</button>
+                <button type="button"
+                    class="add-file bg-color-008CBA color-white padding-12-20 border-none border-radius-5 cursor-pointer font-size-16 display-block margin-auto margin-top-10">Tambah
+                    Fail</button>
 
-                <label for="payment">Pembayaran:</label>
-                <select id="payment" name="payment" required>
+                <label for="payment" class="color-555">Pembayaran:</label>
+                <select id="payment" name="payment" required
+                    class="input-select-width input-padding-10 input-border border-radius-5">
                     <option disabled selected hidden>Pilih Jenis
                         Pembayaran</option>
                     <option value="cash">Cash</option>
@@ -40,15 +46,19 @@
                     <option value="bank">Bank</option>
                 </select><br>
 
-                <button type="submit">Submit</button>
+                <button type="submit"
+                    class="bg-color-4CAF50 color-white padding-12-20 border-none border-radius-5 cursor-pointer font-size-16 display-block margin-auto margin-top-20">Submit</button>
             </form>
 
-            <div id="progress-container">
-                <div id="progress-bar"></div>
-                <div id="progress-text"></div>
+            <div id="progress-container"
+                class="display-none position-relative margin-top-20">
+                <div id="progress-bar"
+                    class="bg-color-4CAF50 border-radius-5"></div>
+                <div id="progress-text"
+                    class="position-absolute top-50 left-50 transform-translate color-black font-size-14">0%</div>
             </div>
         </div>
-        <footer>
+        <footer class="footer-text">
             <p>© Copyright 2024 FRPrinting SDN.BHD. All Rights Reserved.</p>
         </footer>
     </body>
