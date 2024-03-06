@@ -1,7 +1,12 @@
-body {
+.body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 20px;
     background-color: #f4f4f4;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
 }
 
 .container {
@@ -14,24 +19,23 @@ body {
     position: relative;
 }
 
-h1 {
+.h1 {
     text-align: left;
     color: #333;
 }
 
-form {
+.form {
     max-width: 400px;
     margin: auto;
 }
 
-label {
+.label {
     display: block;
     margin-bottom: 8px;
     color: #555;
 }
 
-input,
-select {
+.input, .select {
     width: calc(100% - 16px);
     margin-bottom: 16px;
     padding: 10px;
@@ -40,7 +44,7 @@ select {
     border-radius: 5px;
 }
 
-button {
+.button {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -55,9 +59,15 @@ button {
 
 .add-file {
     background-color: #008CBA;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
     display: block;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 35px;
 }
 
 .error-message {
@@ -66,13 +76,13 @@ button {
     text-align: center;
 }
 
-#progress-container {
+.progress-container {
     display: none;
     margin-top: 20px;
     position: relative;
 }
 
-#progress-bar {
+.progress-bar {
     width: 100%;
     height: 20px;
     background-color: #4CAF50;
@@ -80,7 +90,7 @@ button {
     position: absolute;
 }
 
-#progress-text {
+.progress-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -120,7 +130,7 @@ button {
     cursor: pointer;
 }
 
-footer {
+.footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px;
