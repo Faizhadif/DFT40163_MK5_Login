@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1 class="heading">FR Printing Service</h1>
-        <img src="images/logo.png" alt="Logo" class="logo">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>FR Printing Service</h1>
+            <img src="images/logo.png" width="100" height="100">
 
-        <form action="login.php" method="post">
-            <button type="submit" class="admin-login">Admin Login</button>
-        </form>
-        <form id="uploadForm" action="#" method="post" enctype="multipart/form-data" class="upload-form">
-            <label for="name" class="form-label">Nama:</label>
-            <input type="text" id="name" name="name" required class="form-input"><br>
+            <form action="login.php" method="post">
+                <button type="submit" class="admin-login">Admin Login</button>
+            </form>
+            <form id="uploadForm" action="#" method="post"
+                enctype="multipart/form-data">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required><br>
 
-            <label for="room" class="form-label">No. Bilik:</label>
-            <input type="text" id="room" name="room" required class="form-input"><br>
+                <label for="room">No. Bilik:</label>
+                <input type="text" id="room" name="room" required><br>
 
-            <label for="files" class="form-label">Sila Hantar File:</label>
-            <div id="fileInputs" class="file-inputs">
-                <div class="file-input-container">
-                    <input type="file" name="files[]" class="file-input" accept=".pdf,.doc,.docx" required>
+                <label for="files">Sila Hantar File:</label>
+                <div id="fileInputs">
+                    <div class="file-input-container">
+                        <input type="file" name="files[]" class="file-input"
+                            accept=".pdf,.doc,.docx" required>
+                    </div>
                 </div>
+                <button type="button" class="add-file">Tambah Fail</button>
+
+                <label for="payment">Pembayaran:</label>
+                <select id="payment" name="payment" required>
+                    <option disabled selected hidden>Pilih Jenis
+                        Pembayaran</option>
+                    <option value="cash">Cash</option>
+                    <option value="tng">Touch 'n Go</option>
+                    <option value="bank">Bank</option>
+                </select><br>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+                <div id="progress-text"></div>
             </div>
-            <button type="button" class="add-file">Tambah Fail</button>
-
-            <label for="payment" class="form-label">Pembayaran:</label>
-            <select id="payment" name="payment" required class="form-select">
-                <option disabled selected hidden>Pilih Jenis Pembayaran</option>
-                <option value="cash">Cash</option>
-                <option value="tng">Touch 'n Go</option>
-                <option value="bank">Bank</option>
-            </select><br>
-
-            <button type="submit" class="submit-button">Submit</button>
-        </form>
-
-        <div id="progress-container" class="progress-container">
-            <div id="progress-bar" class="progress-bar"></div>
-            <div id="progress-text" class="progress-text"></div>
         </div>
-    </div>
-    <footer class="footer">
-        <p>© Copyright 2024 FRPrinting SDN.BHD. All Rights Reserved.</p>
-    </footer>
-</body>
+        <footer>
+            <p>© Copyright 2024 FRPrinting SDN.BHD. All Rights Reserved.</p>
+        </footer>
+    </body>
 </html>
