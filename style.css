@@ -35,7 +35,7 @@
     color: #555;
 }
 
-.input, .select {
+.input {
     width: calc(100% - 16px);
     margin-bottom: 16px;
     padding: 10px;
